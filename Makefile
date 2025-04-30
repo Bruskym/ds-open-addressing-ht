@@ -1,9 +1,9 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -std=c99
+CFLAGS = -Wall -Wextra -std=c99 -Iincludes
 TARGET = app
 
-SRC = app.c hash_table.c utils/prime.c
-HEADERS = ht_structure.h
+SRC = src/app.c src/hash_table.c src/utils/prime.c
+HEADERS = includes/ht_structure.h includes/prime.h
 
 all: $(TARGET)
 
